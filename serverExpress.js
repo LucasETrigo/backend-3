@@ -1,7 +1,8 @@
 const Contenedor = require("./Contenedor");
 const express = require('express');
 const app = express();
-const PORT = 3000;
+// Process.env.PORT for heroku to work
+const PORT = process.env.PORT || 8080;
 const contenedor = new Contenedor("./productos.txt");
 
 app.get('/', (req, res) => {
