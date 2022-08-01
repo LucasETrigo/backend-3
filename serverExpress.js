@@ -1,7 +1,7 @@
 const Contenedor = require("./Contenedor");
 const express = require('express');
 const app = express();
-const PORT = 8080;
+const PORT = 3000;
 const contenedor = new Contenedor("./productos.txt");
 
 app.get('/', (req, res) => {
